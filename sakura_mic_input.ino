@@ -87,8 +87,8 @@ bool isReading(){
 }
 
 void enqueueSamples(int sample){
-  //data[counter++] = sample << 2;
-  data.write(counter++ , sample << 2);
+  //data[counter++] = sample >> 2;
+  data.write(counter++ , sample >> 2);
 }
 
 void flushSamples(){
